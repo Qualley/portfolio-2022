@@ -10,7 +10,7 @@ function compilescss() {
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 2 versions'))
         .pipe(minify())
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
 }
 
@@ -18,11 +18,11 @@ function compilescss() {
 function watch() {
     browserSync.init({
         server: {
-            baseDir: './dist'
+            baseDir: './'
         }
     });
     gulp.watch('./scss/**/*.scss', compilescss);
-    gulp.watch('./dist/*.html').on('change', browserSync.reload);
+    gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 exports.watch = watch;
