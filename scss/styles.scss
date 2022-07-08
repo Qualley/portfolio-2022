@@ -1,0 +1,12 @@
+@import './abstracts.scss/variables';
+@import './base.scss/reset';
+@import './base.scss/typography';
+@import './components.scss/navigation';
+@import './layout.scss/grid';
+@import './pages.scss/home';
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+}
