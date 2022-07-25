@@ -1,0 +1,6 @@
+.hero {
+    position: relative;
+    @include flex-center;
+    height: 100vh;
+    text-align: center;
+}
