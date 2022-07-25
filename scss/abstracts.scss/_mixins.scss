@@ -1,0 +1,28 @@
+// Typography
+@mixin paragraph {
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+}
+
+// Flex
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
