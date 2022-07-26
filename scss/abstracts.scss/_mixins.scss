@@ -6,7 +6,7 @@
     letter-spacing: 0.75px;
 }
 
-// Flex
+// Flex  direction, justify, align-items, align-content, gap
 @mixin flex {
     display: flex;
     flex-direction: column;
@@ -25,4 +25,33 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+// Flex  direction, justify, align-items, align-content,
+@mixin flexbox(
+    // default properties
+    $display: flex,
+    $dir: column, 
+    $just: center, 
+    $align-i: flex-start, 
+    $align-c: flex-start ) {
+
+        display: $display;flex-direction: $dir;
+        justify-content: $just;
+        align-items: $align-i;
+        align-content: $align-c;
+
+        @if $dir == row {
+            flex-direction: $dir;
+        }
+        @if $just == flex-start {
+            justify-content: $just;
+        }
+        @if $align-i == center {
+            align-items: $align-i;
+        }
+        @if $align-c == cneter {
+            align-content: $align-c;
+        }
+
 }

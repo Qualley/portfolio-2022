@@ -1,11 +1,7 @@
 // Global Navigation
 #mainNav {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    @include flexbox($dir: col, $just: flex-start);
+    grid-column: span 3;
     a {
         margin: 20px 40px;
     }
