@@ -6,29 +6,8 @@
     letter-spacing: 0.75px;
 }
 
-// Flex  direction, justify, align-items, align-content, gap
-@mixin flex {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
-@mixin flex-row {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-}
-
-@mixin flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 // Flex  direction, justify, align-items, align-content,
-@mixin flexbox(
+@mixin flex(
     // default properties
     $display: flex,
     $dir: column, 
@@ -36,7 +15,8 @@
     $align-i: flex-start, 
     $align-c: flex-start ) {
 
-        display: $display;flex-direction: $dir;
+        display: $display;
+        flex-direction: $dir;
         justify-content: $just;
         align-items: $align-i;
         align-content: $align-c;
@@ -53,5 +33,4 @@
         @if $align-c == cneter {
             align-content: $align-c;
         }
-
 }
