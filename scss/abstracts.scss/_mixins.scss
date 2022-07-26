@@ -8,13 +8,13 @@
 
 // Flex  direction, justify, align-items, align-content,
 @mixin flex(
-    // default properties
+    // Variable defaults
     $display: flex,
     $dir: column, 
     $just: center, 
     $align-i: flex-start, 
     $align-c: flex-start ) {
-
+        // Property defaults
         display: $display;
         flex-direction: $dir;
         justify-content: $just;
@@ -34,3 +34,5 @@
             align-content: $align-c;
         }
 }
+
+
