@@ -1,0 +1,35 @@
+
+.item {
+    @include flex();
+    // Property defaults
+}
+
+.item {
+    @include flex($dir: row, $align-c: center);
+    // Updates properties passed into flex from default
+}
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
