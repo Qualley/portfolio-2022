@@ -24,5 +24,6 @@ function watch() {
     gulp.watch('./scss/**/*.scss', compilescss);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
+
 exports.compilescss = compilescss;
 exports.watch = watch;
