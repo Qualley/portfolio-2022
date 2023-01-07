@@ -6,6 +6,12 @@
     letter-spacing: 0.75px;
 }
 
+@mixin navItem {
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 666;
+}
+
 // Flex  direction, justify, align-items, align-content,
 @mixin flex(
     // Variable defaults
