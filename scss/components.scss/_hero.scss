@@ -1,4 +1,14 @@
 .hero {
     @include flex($align-i: center);
-    height: 90vh;
+    gap: 60px;
+    height: 66vh;
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        width: 735px;
+    }
+
 }

@@ -21,8 +21,14 @@ body {
     
     a {
         @include paragraph();
+        @include navItem();
+        margin: 20px 40px;
         text-decoration: none;
         color: $text-default;
+
+        &:hover{
+            color: $text-highlight;
+        }
     }
 
 }

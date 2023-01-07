@@ -1,8 +1,20 @@
 // Global Navigation
 #mainNav {
-    @include flex($dir: col, $just: flex-start);
+    @include flex($dir: col, $just: flex-start, $align-i: center);
+    height: 104px;
+    justify-content: space-between;
     grid-column: span 3;
-    a {
-        margin: 20px 40px;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: cneter;
     }
+
+    .navItems {
+        height: 100%;
+        @include flex($dir: col, $just: flex-start, $align-i: center);
+    }
+
 }
