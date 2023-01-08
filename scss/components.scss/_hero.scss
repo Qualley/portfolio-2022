@@ -1,14 +1,28 @@
-.hero {
-    @include flex($align-i: center);
-    gap: 60px;
-    height: 66vh;
 
-    h1 {
-        text-align: center;
+.hero-wrapper {
+    pointer-events: none;
+
+    .hero {
+        @include flex($align-i: center);
+        gap: 60px;
+        height: 66vh;
+        pointer-events: none;
+    
+        .hero-bg {
+            position: absolute;
+            background-color: $fill-canvas-dark;
+            height: 80vh;
+            width: 100%;
+          }
+    
+        h1 {
+            text-align: center;
+            pointer-events: none;
+        }
+    
+        p {
+            width: 735px;
+        }
+    
     }
-
-    p {
-        width: 735px;
-    }
-
 }
