@@ -15,8 +15,32 @@ body {
         }
     }
 
+    h2 {
+        &.small {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+
     p {
-        @include paragraph()
+        @include paragraph();
+
+        &.copy-large {
+            color: $text-quiet;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 38px;
+        }
+
+        &.copy-small {
+            color: $text-quiet;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 34px;
+        }
     }
     
     a {
