@@ -1,23 +1,33 @@
 // Grid structure
+.gridWrapper {
+    @include flex($align-i: center);
+    width: 100%;
+    position: relative;
+}
+
 .grid {
     position: relative;
     display: grid;
     margin: 0 auto;
-    gap: 20px;
+    gap: 2rem;
     row-gap: 0px;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    max-width: 1440px;
+    max-width: 144rem;
+
+    @media (width < $vp-l) {
+        padding: 0 6rem;
+    }
     
-    .span-3 {
-        grid-column: span 3;
+    @media (width < $vp-s) {
+        padding: 0 4rem;
     }
 
-    .span-2 {
-        grid-column: span 2;
+    @media (width < $vp-xs) {
+        padding: 0 2rem;
     }
-    
-    .span-1 {
-        grid-column: span 1;
+
+    .span-3 {
+        grid-column: span 3;
     }
 }

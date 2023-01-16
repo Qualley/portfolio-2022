@@ -1,20 +1,27 @@
 // Global Navigation
-#mainNav {
-    @include flex($dir: col, $just: flex-start, $align-i: center);
-    height: 104px;
-    justify-content: space-between;
-    grid-column: span 3;
+#navWrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 
-    .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: cneter;
-    }
-
-    .navItems {
-        height: 100%;
+    .mainNav {
         @include flex($dir: col, $just: flex-start, $align-i: center);
+        height: 10.4rem;
+        top: 0;
+        justify-content: space-between;
+        grid-column: span 3;
+    
+        ._logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: cneter;
+        }
+    
+        ._navItems {
+            height: 100%;
+            @include flex($dir: col, $just: flex-start, $align-i: center);
+        }
+    
     }
-
 }
