@@ -1,14 +1,6 @@
 body {
     position: relative;
     overflow-x: hidden;
-    margin-bottom: 200px;
+    margin-bottom: 20rem;
     background-color: $fill-canvas;
-
-    .hero-bg {
-      position: absolute;
-      background-color: $fill-canvas-dark;
-      height: 85vh;
-      width: 100%;
-      overflow: hidden;
-    }
   }

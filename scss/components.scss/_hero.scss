@@ -1,22 +1,19 @@
-.spline-watermark {
-    display: none;
+.hero-bg {
+    position: absolute;
+    background-color: $fill-canvas-dark;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-.hero-wrapper {
+#heroWrapper {
     pointer-events: none;
 
-    .hero {
+    ._info {
         @include flex($align-i: center);
         gap: 60px;
-        height: 66vh;
+        height: 85vh;
         pointer-events: none;
-    
-        .hero-bg {
-            position: absolute;
-            background-color: $fill-canvas-dark;
-            height: 80vh;
-            width: 100%;
-          }
     
         h1 {
             text-align: center;
@@ -24,7 +21,8 @@
         }
     
         p {
-            width: 735px;
+            width: 100%;
+            max-width: 73.5rem;
         }
     
     }
